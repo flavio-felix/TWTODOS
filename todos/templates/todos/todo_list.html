@@ -14,7 +14,7 @@
           </nav>
         <main class="container">  Lista de Tarefas 
 
-        {% if todos %}
+        {% if todo_list %}
         <table class="table table-striped">
             <thead>
               <tr>
@@ -28,7 +28,7 @@
             </thead>
             <tbody>
               <tr>
-                {% for todo in todos %}
+                {% for todo in todo_list %}
                 <tr>
                     <th scope="row">{{ todo.pk }}</th>
                     <td>{{ todo.title }}</td>
